@@ -1,4 +1,4 @@
-print ("                               Welcome to xyzshop")
+print ("                               Welcome to Online Marketplace")     #Online Marketplace can be switched with any other name
 lipro=[]
 lipri=[]
 liqty=[]
@@ -18,10 +18,10 @@ def checkout(li7):
         cost = sum(li7)
     if len(li7) >=5:
         cost = sum(li7)-(sum(li7)*0.1)
-    print("                                 XYZ Shop")
+    print("                                 Online Marketplace")
     print("              Address: #34, Bikasipura,Konankunte cross, Bengaluru-78")
     print("                     Phone: 1800-254-4321 (toll free)")
-    print("                     email: contact@xyzshop.com")
+    print("                     email: contact@onlinemarketplace.com")
     print("                                        INVOICE  ")
     ln=len(lipri)
     for i in range(0,ln):
@@ -37,15 +37,14 @@ def checkout(li7):
 li7=[]
 n=0
 while n<=5:
-    print ("We have a wide range of products")
-    print ("1. Mobile Phones")
-    print ("2. Smartphone Accessories")
-    print ("3. Office Essentials")
-    print ("4. Car parts")
-    print ("5. Fashion and Accessories")
-    print ("6. Checkout")
-    
-    print("Note that we provide a flat 10% discount on orders including greater than 5 items")
+    print ('''We have a wide range of products
+1. Mobile Phones"
+2. Smartphone Accessories
+3. Office Essentials
+4. Car parts
+5. Fashion and Accessories
+6. Checkout
+ Flat 10% discount on orders including more than 5 items''')
     n = int(input("Enter your choice:"))
     if n==1:
         print('''Your Mobile Destination
@@ -488,7 +487,7 @@ myfile.close()
 
 
 import mysql.connector as sql
-mycon=sql.connect(host="localhost",user="root",passwd="",database="test")
+mycon=sql.connect(host="localhost",user="root",passwd="",database="test")               #linking it with MySQL database
 try:
         cursor=mycon.cursor()
         for i in range(0,len(lipro)):
